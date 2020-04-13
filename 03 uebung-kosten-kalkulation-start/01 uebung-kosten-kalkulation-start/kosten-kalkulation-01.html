@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Kosten Kalkualtor - Schritt 1</title>
+</head>
+<body>
+
+<div>
+    <p>Bitte füllen Sie dieses Formular aus, um die Gesamtkosten zu berechnen</p>
+
+    <form action="kalkulation-01.php" method="post">
+
+        <!-- Preis -->
+
+        <p>Preis: <input type="text" name="preis" value="1000"> €</p>
+
+        <!-- Anzahl -->
+
+        <p>Anzahl: <input type="number" name="anzahl" min="1" value="1"></p>
+
+        <!-- Rabatt -->
+
+        <p>Rabatt <input type="text" name="rabatt" value="100"> €</p>
+
+        <!-- Steuer -->
+
+        <p>Steuer <input type="text" name="steuer" value="10"> (%)</p>
+
+        <!-- Zahlungsraten -->
+
+        <p>Wie viele Zahlungsraten? <input type="number" name="zahlungsraten" value="1"></p>
+
+        <!-- Absenden -->
+
+        <input type="submit" name="submit" value="Berechnen">
+
+    </form>
+
+</div>
+</body>
+</html>
